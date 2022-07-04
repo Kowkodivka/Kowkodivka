@@ -1,3 +1,1 @@
-### Ahoj
-- 🌱 I’m currently learning Java.
-- 📫 If you want to contact me, write to the my discord: Eridder#0949.
+[![Kowkodivka's GitHub stats](https://github-readme-stats.vercel.app/api?username=Kowkodivka)](https://github.com/anuraghazra/github-readme-stats)
