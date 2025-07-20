@@ -1,4 +1,4 @@
-📢 ru
-🐾 furry
-🌈 gay
-🔥 Rust & Python favourite languages
+📢 ru  
+🐾 furry  
+🌈 gay  
+🔥 Rust, C# & Python are my favourite languages  
