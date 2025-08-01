@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.1.10",
-    "@tailwindcss/vite": "^4.1.11",
-    "solid-js": "^1.9.7",
-    "tailwindcss": "^4.1.11"
+    "@tailwindcss/vite": "4.1.11",
+    "solid-icons": "1.1.0",
+    "solid-js": "1.9.7",
+    "tailwindcss": "4.1.11"
   },
   "devDependencies": {
     "prettier": "3.6.2",
-    "vite": "^7.0.4",
-    "vite-plugin-solid": "^2.11.7"
+    "vite": "7.0.4",
+    "vite-plugin-solid": "2.11.7"
   }
 }
