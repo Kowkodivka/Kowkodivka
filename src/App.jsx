@@ -8,14 +8,14 @@ import {
 import avatar from "./avatar.webp";
 
 const links = [
-  { icon: "Discord", text: "kowkodivka", url: "#" },
-  { icon: "Twitter", text: "kowkodivka", url: "https://x.com/kowkodivka" },
+  { icon: "Discord", text: "@kowkodivka", url: "#" },
+  { icon: "Twitter", text: "@kowkodivka", url: "https://x.com/kowkodivka" },
   {
     icon: "Steam",
     text: "kowkodivka_",
     url: "https://steamcommunity.com/id/kowkodivka_",
   },
-  { icon: "Github", text: "kowkodivka", url: "https://github.com/kowkodivka" },
+  { icon: "Github", text: "Kowkodivka", url: "https://github.com/Kowkodivka" },
 ];
 
 const content = {
