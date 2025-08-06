@@ -1,24 +1,28 @@
 {
-  "name": "bio-card",
+  "name": "kowkodivka",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "format": "pnpm exec prettier . --write"
   },
   "dependencies": {
+    "@phosphor-icons/react": "2.1.10",
     "@tailwindcss/vite": "4.1.11",
-    "solid-icons": "1.1.0",
-    "solid-js": "1.9.7",
-    "tailwindcss": "4.1.11"
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "tailwindcss": "4.1.11",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
     "gh-pages": "6.3.0",
     "prettier": "3.6.2",
-    "vite": "7.0.4",
-    "vite-plugin-solid": "2.11.7"
+    "globals": "16.3.0",
+    "vite": "7.0.6"
   }
 }
