@@ -6,7 +6,6 @@ import {
   DiscordLogoIcon,
   PuzzlePieceIcon,
   CompassToolIcon,
-  CircleIcon,
 } from "@phosphor-icons/react";
 import avatarPic from "./public/avatar.jpg";
 import backgroundImage from "./public/wallpaper.jpg";
@@ -25,9 +24,18 @@ const App = () => {
   ];
 
   const techStackSections = [
-    { title: "Backend", items: ["Python (torch, matplotlib, openslide, opencv, numpy, FastAPI)", "Rust (tokio, tower, axum, sqlx)"] },
+    {
+      title: "Backend",
+      items: [
+        "Python (torch, matplotlib, openslide, opencv, numpy, FastAPI)",
+        "Rust (tokio, tower, axum, sqlx)",
+      ],
+    },
     { title: "Frontend", items: ["Javascript (React, Solid)"] },
-    { title: "DevOps & Tools", items: ["Docker, Git, Linux", "VS Code, Figma"] },
+    {
+      title: "DevOps & Tools",
+      items: ["Docker, Git, Linux", "VS Code, Figma"],
+    },
     { title: "APIs & Platforms", items: ["Swagger, OpenAPI"] },
     { title: "Principles", items: ["SOLID, KISS, DRY"] },
   ];
@@ -41,9 +49,9 @@ const App = () => {
   );
 
   const ProfileCard = () => (
-    <article className="flex flex-col w-full max-w-[350px] gap-2.5 p-2.5 bg-[#f5eae8] rounded-lg shadow-2xl">
+    <article className="flex flex-col w-full gap-2.5 p-2.5 bg-[#f5eae8] rounded-lg shadow-2xl">
       <WindowControls />
-      <section className="flex items-center gap-2.5">
+      <section className="flex flex-col sm:flex-row items-center gap-2.5">
         <img
           className="w-32 h-32 object-cover rounded-md"
           alt="Profile picture of Kowkodivka"
@@ -90,9 +98,20 @@ const App = () => {
       </section>
       <section className="p-2.5 bg-[#8185b2] rounded-lg text-[#f5eae8] text-xs font-medium">
         <p>
-          Hey! I'm Kowkodivka (but you can call me Zhenya if that's easier). My story starts in the vibrant landscapes of Kazakhstan, but life brought me to Russia — a place I now proudly call home and absolutely adore. <br /><br />
-          As a proud pansexual and an enthusiastic furry, I celebrate self-expression in all its forms. When I'm not lost in the world of coding or tinkering with design, you'll find me with a stylus in hand, bringing my artistic visions to life. <br /><br />
-          Every day is a new adventure — whether I'm debugging a program, sketching a furry character, or just vibing to good music. Life's too short to be boring, right? <br /><br />
+          Hey! I'm Kowkodivka (but you can call me Zhenya if that's easier). My
+          story starts in the vibrant landscapes of Kazakhstan, but life brought
+          me to Russia — a place I now proudly call home and absolutely adore.{" "}
+          <br />
+          <br />
+          As a proud pansexual and an enthusiastic furry, I celebrate
+          self-expression in all its forms. When I'm not lost in the world of
+          coding or tinkering with design, you'll find me with a stylus in hand,
+          bringing my artistic visions to life. <br />
+          <br />
+          Every day is a new adventure — whether I'm debugging a program,
+          sketching a furry character, or just vibing to good music. Life's too
+          short to be boring, right? <br />
+          <br />
           Nice to meet you! Let's create something awesome together.
         </p>
       </section>
@@ -100,7 +119,7 @@ const App = () => {
   );
 
   const FunFactsCard = () => (
-    <article className="flex flex-col w-full max-w-[257px] gap-2.5 p-2.5 bg-[#dbddec] rounded-lg shadow-2xl">
+    <article className="flex flex-col w-full gap-2.5 p-2.5 bg-[#dbddec] rounded-lg shadow-2xl">
       <WindowControls />
       <section className="flex flex-col gap-2.5 p-2.5 bg-[#8185b2] rounded-lg">
         <header className="flex items-center gap-1.5">
@@ -117,7 +136,7 @@ const App = () => {
   );
 
   const TechStackCard = () => (
-    <article className="flex flex-col w-full max-w-[257px] gap-2.5 p-2.5 bg-[#dbddec] rounded-lg shadow-2xl">
+    <article className="flex flex-col w-full gap-2.5 p-2.5 bg-[#dbddec] rounded-lg shadow-2xl">
       <WindowControls />
       <section className="flex flex-col gap-2.5 p-2.5 bg-[#8185b2] rounded-lg">
         <header className="flex items-center gap-1.5">
@@ -139,12 +158,18 @@ const App = () => {
   );
 
   return (
-    <main className="min-h-screen w-full flex items-center justify-center bg-gray-100 p-4">
+    <main className="min-h-screen h-screen w-full flex items-center justify-center bg-gray-100 p-4 relative font-inter">
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+         * {
+           font-family: 'Inter', sans-serif;
+         }`}
+      </style>
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-fixed hidden md:block"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
-      <div className="relative flex flex-col md:flex-row items-center gap-6 w-full max-w-4xl">
+      <div className="relative flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-4xl">
         <ProfileCard />
         <aside className="flex flex-col gap-6 w-full md:w-auto">
           <FunFactsCard />
