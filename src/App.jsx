@@ -1,4 +1,3 @@
-import React from "react";
 import {
   PlanetIcon,
   XLogoIcon,
@@ -9,7 +8,6 @@ import {
   InfoIcon,
 } from "@phosphor-icons/react";
 import avatarPic from "./public/avatar.jpg";
-import backgroundImage from "./public/wallpaper.jpg";
 import "./index.css";
 
 const App = () => {
@@ -66,63 +64,65 @@ const App = () => {
         />
       </header>
 
-      <section className="flex items-center gap-2.5 w-full">
+      <section className="flex items-start gap-2.5 w-full">
         <img
-          className="w-32 h-32 object-cover rounded-md"
+          className="w-32 h-32 object-cover rounded-md border-2 border-[#8185b2]"
           alt="Profile picture of Kowkodivka"
           src={avatarPic}
         />
-        <div className="flex flex-col items-start justify-between flex-1">
-          <header className="flex flex-col">
+        <div className="flex flex-col justify-between h-32">
+          <section className="flex flex-col">
             <h1 className="font-inter-black text-[#8185b2] text-lg">
               Kowkodivka
             </h1>
             <p className="font-inter-medium-italic text-[#8185b2] text-[10px]">
               developer / ui ux designer
             </p>
-          </header>
-          <address className="flex flex-col gap-0.5 not-italic">
-            <div className="flex items-center gap-0.5">
+          </section>
+          <section className="flex items-center">
+            <address className="flex items-center gap-0.5 not-italic">
               <PlanetIcon size={16} className="text-[#8185b2]" />
               <span className="text-[#8185b2] text-xs">
                 Novokuznetsk, Russia
               </span>
-            </div>
-          </address>
-          <nav className="flex gap-2.5" aria-label="Social media links">
-            <div className="flex flex-col gap-0.5">
-              {socialLinks.map(({ Icon, text, href }, index) => (
-                <a
-                  key={index}
-                  href={href}
-                  className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
-                  aria-label={`Visit ${text} profile`}
-                >
-                  <Icon size={16} className="text-[#8185b2]" />
-                  <span className="text-[#8185b2] text-xs">{text}</span>
-                </a>
-              ))}
-            </div>
-            <div className="flex flex-col gap-0.5">
-              {additionalSocialLinks.map(({ Icon, text, href }, index) => (
-                <a
-                  key={index}
-                  href={href}
-                  className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
-                  aria-label={`Visit ${text} profile`}
-                >
-                  <Icon size={16} className="text-[#8185b2]" />
-                  <span className="text-[#8185b2] text-xs">{text}</span>
-                </a>
-              ))}
-            </div>
-          </nav>
+            </address>
+          </section>
+          <section>
+            <nav className="flex gap-2.5" aria-label="Social media links">
+              <div className="flex flex-col gap-0.5">
+                {socialLinks.map(({ Icon, text, href }, index) => (
+                  <a
+                    key={index}
+                    href={href}
+                    className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
+                    aria-label={`Visit ${text} profile`}
+                  >
+                    <Icon size={16} className="text-[#8185b2]" />
+                    <span className="text-[#8185b2] text-xs">{text}</span>
+                  </a>
+                ))}
+              </div>
+              <div className="flex flex-col gap-0.5">
+                {additionalSocialLinks.map(({ Icon, text, href }, index) => (
+                  <a
+                    key={index}
+                    href={href}
+                    className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
+                    aria-label={`Visit ${text} profile`}
+                  >
+                    <Icon size={16} className="text-[#8185b2]" />
+                    <span className="text-[#8185b2] text-xs">{text}</span>
+                  </a>
+                ))}
+              </div>
+            </nav>
+          </section>
         </div>
       </section>
 
       <section className="flex flex-col gap-2.5 p-2.5 w-full bg-[#8185b2] rounded-[10px]">
         <header className="flex items-center gap-[5px]">
-          <InfoIcon size={20} className="text-[#f5eae8]" />
+          <InfoIcon size={20} className="text-[#f5eae8]" weight="bold" />
           <h2 className="font-inter-black text-[#f5eae8] text-lg">About me</h2>
         </header>
         <div className="font-inter-medium text-[#f5eae8] text-xs">
@@ -149,7 +149,7 @@ const App = () => {
 
       <section className="flex flex-col gap-2.5 p-2.5 w-full bg-[#8185b2] rounded-[10px]">
         <header className="flex items-center gap-[5px]">
-          <CompassToolIcon size={20} className="text-[#f5eae8]" />
+          <CompassToolIcon size={20} className="text-[#f5eae8]" weight="bold" />
           <h2 className="font-inter-black text-[#f5eae8] text-lg">
             Tech stack
           </h2>
