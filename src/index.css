@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter-black {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.font-inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.font-inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.font-inter-medium-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
