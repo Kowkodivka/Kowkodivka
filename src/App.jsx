@@ -22,7 +22,7 @@ const App = () => {
 
   const additionalSocialLinks = [
     { Icon: TelegramLogoIcon, text: "kwkdvka", href: "https://t.me/kwkdvk" },
-    { Icon: DiscordLogoIcon, text: "kowkodivka", href: "https://discord.com/" },
+    { Icon: DiscordLogoIcon, text: "kowkodivka", href: "#" },
   ];
 
   const techStackData = [
@@ -32,10 +32,6 @@ const App = () => {
         "Python (torch, matplotlib, openslide, opencv, numpy, FastAPI)",
         "Rust (tokio, tower, axum, sqlx)",
       ],
-    },
-    {
-      category: "Frontend",
-      items: ["Javascript (React, Solid)"],
     },
     {
       category: "DevOps & Tools",
@@ -54,24 +50,14 @@ const App = () => {
   const ProfileCard = () => (
     <article className="flex flex-col w-full max-w-[350px] gap-2.5 p-2.5 bg-[#f5eae8] rounded-[10px] shadow-[0px_22px_48px_#0000001a,0px_88px_88px_#00000017,0px_198px_119px_#0000000d,0px_352px_141px_#00000003]">
       <header className="flex items-center gap-[5px] w-full" role="banner">
-        <div
-          className="bg-[#ff605c] w-2.5 h-2.5 rounded-full"
-          aria-label="Close window"
-        />
-        <div
-          className="bg-[#ffbd44] w-2.5 h-2.5 rounded-full"
-          aria-label="Minimize window"
-        />
-        <div
-          className="bg-[#00ca4e] w-2.5 h-2.5 rounded-full"
-          aria-label="Maximize window"
-        />
+        <div className="bg-[#ff605c] w-2.5 h-2.5 rounded-full" />
+        <div className="bg-[#ffbd44] w-2.5 h-2.5 rounded-full" />
+        <div className="bg-[#00ca4e] w-2.5 h-2.5 rounded-full" />
       </header>
 
       <section className="flex items-start gap-2.5 w-full">
         <img
           className="w-32 h-32 object-cover rounded-md border-2 border-[#8185b2]"
-          alt="Profile picture of Kowkodivka"
           src={avatarPic}
         />
         <div className="flex flex-col justify-between h-32">
@@ -80,7 +66,7 @@ const App = () => {
               Kowkodivka
             </h1>
             <p className="font-inter-medium-italic text-[#8185b2] text-[10px]">
-              developer / ui ux designer
+              developer
             </p>
           </section>
           <section className="flex items-center">
@@ -99,7 +85,6 @@ const App = () => {
                     key={index}
                     href={href}
                     className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
-                    aria-label={`Visit ${text} profile`}
                   >
                     <Icon size={16} className="text-[#8185b2]" />
                     <span className="text-[#8185b2] text-xs">{text}</span>
@@ -112,7 +97,6 @@ const App = () => {
                     key={index}
                     href={href}
                     className="flex items-center gap-0.5 hover:opacity-80 transition-opacity"
-                    aria-label={`Visit ${text} profile`}
                   >
                     <Icon size={16} className="text-[#8185b2]" />
                     <span className="text-[#8185b2] text-xs">{text}</span>
@@ -131,21 +115,25 @@ const App = () => {
         </header>
         <div className="font-inter-medium text-[#f5eae8] text-xs">
           <p className="mb-4">
-            Hey! I'm Kowkodivka (but you can call me Zhenya if that's easier).
-            My story starts in the vibrant landscapes of Kazakhstan, but life
-            brought me to Russia — a place I now proudly call home and
-            absolutely adore.
+            Hey there! I'm Kowkodivka, but you can call me Zhenya (ˈʐɛnʲə) if
+            you’d like something a bit more personal. I was born in the vibrant
+            landscapes of Kazakhstan, where my journey began, and now I call
+            Russia home — a place where I’ve truly found my sense of belonging
+            and comfort.
           </p>
           <p className="mb-4">
-            As a proud pansexual and an enthusiastic furry, I celebrate
-            self-expression in all its forms. When I'm not lost in the world of
-            coding or tinkering with design, you'll find me with a stylus in
-            hand, bringing my artistic visions to life.
+            I identify as pansexual and participate in the furry community.
+            These aspects of my identity involve expressing individuality and
+            engaging with others who share similar interests.
           </p>
           <p className="mb-4">
-            Every day is a new adventure — whether I'm debugging a program,
-            sketching a furry character, or just vibing to good music. Life's
-            too short to be boring, right?
+            My days often feel monotonous, weighed down by routine. Programming
+            helps break the cycle, as I work on projects that challenge me to
+            create and solve problems. Beyond coding, I spend time drawing or
+            painting, channeling my thoughts into visual forms. Music is a
+            steady presence, filling the background as I explore familiar tracks
+            or new genres. These pursuits give my days some color, helping me
+            manage the boredom that often lingers.
           </p>
           <p>Nice to meet you! Let's create something awesome together.</p>
         </div>
