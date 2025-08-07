@@ -12,13 +12,17 @@ import "./index.css";
 
 const App = () => {
   const socialLinks = [
-    { Icon: XLogoIcon, text: "kowkodivka", href: "#" },
-    { Icon: GithubLogoIcon, text: "Kowkodivka", href: "#" },
+    { Icon: XLogoIcon, text: "kowkodivka", href: "https://x.com/kowkodivka" },
+    {
+      Icon: GithubLogoIcon,
+      text: "Kowkodivka",
+      href: "https://github.com/Kowkodivka",
+    },
   ];
 
   const additionalSocialLinks = [
-    { Icon: TelegramLogoIcon, text: "kwkdvka", href: "#" },
-    { Icon: DiscordLogoIcon, text: "Kowkodivka", href: "#" },
+    { Icon: TelegramLogoIcon, text: "kwkdvka", href: "https://t.me/kwkdvk" },
+    { Icon: DiscordLogoIcon, text: "kowkodivka", href: "https://discord.com/" },
   ];
 
   const techStackData = [
